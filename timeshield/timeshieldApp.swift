@@ -11,7 +11,7 @@ import SwiftUI
 struct timeshieldApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
         }
     }
 }

@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		67969AF72C33D8A6008C17CF /* timeshieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969AF62C33D8A6008C17CF /* timeshieldApp.swift */; };
-		67969AF92C33D8A6008C17CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969AF82C33D8A6008C17CF /* ContentView.swift */; };
+		67969AF92C33D8A6008C17CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969AF82C33D8A6008C17CF /* HomeView.swift */; };
 		67969AFB2C33D8A7008C17CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67969AFA2C33D8A7008C17CF /* Assets.xcassets */; };
 		67969AFE2C33D8A7008C17CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67969AFD2C33D8A7008C17CF /* Preview Assets.xcassets */; };
 		67969B082C33D8A8008C17CF /* timeshieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969B072C33D8A8008C17CF /* timeshieldTests.swift */; };
 		67969B122C33D8A8008C17CF /* timeshieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969B112C33D8A8008C17CF /* timeshieldUITests.swift */; };
 		67969B142C33D8A8008C17CF /* timeshieldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969B132C33D8A8008C17CF /* timeshieldUITestsLaunchTests.swift */; };
+		67969B212C33DF87008C17CF /* AppTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969B202C33DF87008C17CF /* AppTileView.swift */; };
+		67969B242C33DFDF008C17CF /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969B232C33DFDC008C17CF /* AppInfo.swift */; };
+		67969B2A2C33E839008C17CF /* AddShieldScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969B292C33E839008C17CF /* AddShieldScreen.swift */; };
+		67969B2C2C33EBF6008C17CF /* AddAppTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67969B2B2C33EBF6008C17CF /* AddAppTileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		67969AF32C33D8A6008C17CF /* timeshield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeshield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67969AF62C33D8A6008C17CF /* timeshieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeshieldApp.swift; sourceTree = "<group>"; };
-		67969AF82C33D8A6008C17CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67969AF82C33D8A6008C17CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		67969AFA2C33D8A7008C17CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67969AFD2C33D8A7008C17CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67969B032C33D8A8008C17CF /* timeshieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timeshieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		67969B0D2C33D8A8008C17CF /* timeshieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timeshieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67969B112C33D8A8008C17CF /* timeshieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeshieldUITests.swift; sourceTree = "<group>"; };
 		67969B132C33D8A8008C17CF /* timeshieldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeshieldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67969B202C33DF87008C17CF /* AppTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTileView.swift; sourceTree = "<group>"; };
+		67969B232C33DFDC008C17CF /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		67969B292C33E839008C17CF /* AddShieldScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShieldScreen.swift; sourceTree = "<group>"; };
+		67969B2B2C33EBF6008C17CF /* AddAppTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAppTileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		67969AF52C33D8A6008C17CF /* timeshield */ = {
 			isa = PBXGroup;
 			children = (
+				67969B222C33DFD4008C17CF /* Models */,
+				67969B252C33E6C8008C17CF /* Features */,
 				67969AF62C33D8A6008C17CF /* timeshieldApp.swift */,
-				67969AF82C33D8A6008C17CF /* ContentView.swift */,
 				67969AFA2C33D8A7008C17CF /* Assets.xcassets */,
 				67969AFC2C33D8A7008C17CF /* Preview Content */,
 			);
@@ -125,6 +134,49 @@
 				67969B132C33D8A8008C17CF /* timeshieldUITestsLaunchTests.swift */,
 			);
 			path = timeshieldUITests;
+			sourceTree = "<group>";
+		};
+		67969B222C33DFD4008C17CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67969B232C33DFDC008C17CF /* AppInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67969B252C33E6C8008C17CF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				67969B282C33E81B008C17CF /* AddShield */,
+				67969B262C33E7D8008C17CF /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		67969B262C33E7D8008C17CF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				67969B272C33E7E5008C17CF /* Views */,
+				67969AF82C33D8A6008C17CF /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		67969B272C33E7E5008C17CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67969B202C33DF87008C17CF /* AppTileView.swift */,
+				67969B2B2C33EBF6008C17CF /* AddAppTileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67969B282C33E81B008C17CF /* AddShield */ = {
+			isa = PBXGroup;
+			children = (
+				67969B292C33E839008C17CF /* AddShieldScreen.swift */,
+			);
+			path = AddShield;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67969AF92C33D8A6008C17CF /* ContentView.swift in Sources */,
+				67969B212C33DF87008C17CF /* AppTileView.swift in Sources */,
+				67969B2A2C33E839008C17CF /* AddShieldScreen.swift in Sources */,
+				67969B2C2C33EBF6008C17CF /* AddAppTileView.swift in Sources */,
+				67969B242C33DFDF008C17CF /* AppInfo.swift in Sources */,
+				67969AF92C33D8A6008C17CF /* HomeView.swift in Sources */,
 				67969AF72C33D8A6008C17CF /* timeshieldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
