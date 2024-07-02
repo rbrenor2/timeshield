@@ -5,8 +5,11 @@
 //  Created by Breno R R on 02/07/2024.
 //
 import SwiftUI
+import FamilyControls
 
 struct HomeScreen: View {
+    let vm = ViewModel()
+    
     let apps: [AppInfo] = [
         AppInfo(id: UUID(),name: "Instagram", openCount: 2, timeSpent: 120, appImageName: "camera.on.rectangle"),
         AppInfo(id: UUID(),name: "Facebook", openCount: 0, timeSpent: 0, appImageName: "photo.on.rectangle"),
@@ -44,6 +47,9 @@ struct HomeScreen: View {
 //                }
 //              }
         }.padding(.horizontal)
+            .onAppear {
+                vm.requestMonitoringAuthorization()
+            }
     }
 }
 

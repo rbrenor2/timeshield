@@ -10,9 +10,9 @@ import SwiftUI
 struct AddAppTileView: View {
     var body: some View {
         NavigationLink(destination:
-                        AddShieldScreen(onAdd: {
-            print("Add tapped")
-        }, timeInMinutes: 120)
+        AddShieldScreen(onAdd: {
+            print("On save")
+        })
         ) {
             VStack {
                 Image(systemName: "plus")

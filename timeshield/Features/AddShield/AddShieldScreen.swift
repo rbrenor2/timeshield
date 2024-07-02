@@ -6,27 +6,31 @@
 //
 
 import SwiftUI
+import FamilyControls
 
 struct AddShieldScreen: View {
+    @ObservedObject var vm = ViewModel()
+    
     let onAdd: () -> Void
-    @State var timeInMinutes: Int
     
     var body: some View {
-        VStack {
             Form {
-            Picker("Selected app", selection: $timeInMinutes) {
-                    ForEach(2..<200) {
-                        Text("\($0) minutes")
+                
+                Button {
+                    vm.appPickerIsPresented = true
+                } label: {
+                    Text("Selected app")
+                }.familyActivityPicker(isPresented: $vm.appPickerIsPresented, selection: $vm.selectedApp)
+                    .onChange(of: vm.selectedApp) {
+                        print(vm.selectedApp.applications.count)
                     }
-                }
-            .pickerStyle(.navigationLink)
                 Section("Shields") {
-                    Picker("Max time", selection: $timeInMinutes) {
+                    Picker("Max time", selection: $vm.maxTime) {
                             ForEach(2..<200) {
                                 Text("\($0) minutes")
                             }
                         }
-                    Picker("Min time", selection: $timeInMinutes) {
+                    Picker("Min time", selection: $vm.minTime) {
                             ForEach(2..<200) {
                                 Text("\($0) minutes")
                             }
@@ -46,10 +50,10 @@ struct AddShieldScreen: View {
                 }
         }
     }
-}
+
 
 #Preview {
-    AddShieldScreen(onAdd: {
-        print("Added tapped")
-    }, timeInMinutes: 120)
+    AddShieldScreen {
+        print("On save")
+    }
 }
